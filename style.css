@@ -1,0 +1,70 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212529; /* Monochromatic dark gray for high legibility */
+    background-color: #ffffff;
+}
+
+/* --- Navigation & Hover Effects --- */
+.navbar {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #495057 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect: text turns solid black and gets an underline */
+.navbar-nav .nav-link:hover, 
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-item.active .nav-link {
+    color: #000000 !important;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+/* Dropdown Menu - matching main menu background (white) */
+.dropdown-menu {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 0; /* Sharp, no-nonsense edges */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa; /* Very light gray on hover */
+}
+
+/* --- Minimalist Components --- */
+.bg-light-gray {
+    background-color: #f8f9fa;
+}
+
+.card-minimal {
+    border: 1px solid #eaeaea;
+    border-radius: 0; /* Sharp edges for a corporate IT feel */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-minimal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* Standardized primary button */
+.btn-primary-custom {
+    background-color: #212529;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    padding: 10px 24px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary-custom:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
