@@ -1,37 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Consulting | Home</title>
+    <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Apex IT Solutions</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-bold" href="index.html">ITConsult</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
-                            Services
-                        </a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="services.html">All Services</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="services.html#cloud">Cloud Migration</a></li>
-                            <li><a class="dropdown-item" href="services.html#cyber">Cybersecurity</a></li>
-                            <li><a class="dropdown-item" href="services.html#managed">Managed IT Support</a></li>
-                            <li><a class="dropdown-item" href="services.html#network">Network Architecture</a></li>
+                            <li><a class="dropdown-item" href="#">Cloud Migration</a></li>
+                            <li><a class="dropdown-item" href="#">Cybersecurity</a></li>
+                            <li><a class="dropdown-item" href="#">IT Support</a></li>
                         </ul>
                     </li>
+
                     <li class="nav-item"><a class="nav-link" href="why-us.html">Why Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
@@ -39,38 +39,36 @@
         </div>
     </nav>
 
-    <header class="bg-light-gray py-5">
-        <div class="container py-5 text-center">
-            <h1 class="display-4 fw-bold text-dark mb-4">Future-Proofing Your IT Infrastructure</h1>
-            <p class="lead text-secondary mx-auto mb-5" style="max-width: 700px;">
-                We provide efficient, secure, and scalable technology solutions designed to eliminate downtime and accelerate your business growth.
-            </p>
-            <a href="contact.html" class="btn btn-primary-custom btn-lg">Schedule a Consultation</a>
-        </div>
-    </header>
-
-    <section class="container py-5 my-5">
-        <div class="row g-4 text-center">
-            <div class="col-md-4">
-                <h3 class="fw-bold mb-3">01. Assess</h3>
-                <p class="text-secondary">Comprehensive audits of your current systems to identify vulnerabilities and bottlenecks.</p>
-            </div>
-            <div class="col-md-4">
-                <h3 class="fw-bold mb-3">02. Strategize</h3>
-                <p class="text-secondary">Data-driven roadmaps tailored to align your IT architecture with your business objectives.</p>
-            </div>
-            <div class="col-md-4">
-                <h3 class="fw-bold mb-3">03. Implement</h3>
-                <p class="text-secondary">Seamless, no-nonsense deployment of modern solutions with zero operational disruption.</p>
-            </div>
+    <section class="hero bg-white">
+        <div class="container">
+            <h1 class="fw-bold">Future-Proofing Your IT Infrastructure</h1>
+            <p class="text-muted">We help small and mid-sized businesses build secure, scalable IT systems.</p>
+            <a href="contact.html" class="btn btn-dark mt-3">Schedule Consultation</a>
         </div>
     </section>
 
-    <footer class="bg-white border-top py-4 text-center">
+    <section class="section">
         <div class="container">
-            <p class="mb-0 text-secondary">&copy; 2026 Apex IT Solutions. All rights reserved.</p>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <h5>Cloud Solutions</h5>
+                    <p>Move your business to scalable cloud platforms.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Cybersecurity</h5>
+                    <p>Protect your systems from modern threats.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>IT Support</h5>
+                    <p>Reliable support to keep your operations running.</p>
+                </div>
+
+            </div>
         </div>
-    </footer>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

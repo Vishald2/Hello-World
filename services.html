@@ -1,31 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | IT Consulting</title>
+    <title>Services</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Apex IT Solutions</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+            <a class="navbar-brand fw-bold" href="index.html">ITConsult</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">Services</a>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#cloud">Cloud Migration</a></li>
-                            <li><a class="dropdown-item" href="#cyber">Cybersecurity</a></li>
-                            <li><a class="dropdown-item" href="#managed">Managed IT Support</a></li>
-                            <li><a class="dropdown-item" href="#network">Network Architecture</a></li>
+                            <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                            <li><a class="dropdown-item" href="#">Cloud Migration</a></li>
+                            <li><a class="dropdown-item" href="#">Cybersecurity</a></li>
+                            <li><a class="dropdown-item" href="#">IT Support</a></li>
                         </ul>
                     </li>
+
                     <li class="nav-item"><a class="nav-link" href="why-us.html">Why Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
@@ -33,49 +41,31 @@
         </div>
     </nav>
 
-    <main class="container py-5 my-4">
-        <div class="text-center mb-5">
-            <h1 class="fw-bold">Comprehensive IT Solutions</h1>
-            <p class="lead text-secondary">Targeted services to secure and streamline your operations.</p>
-        </div>
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">Our Services</h2>
 
-        <div class="row g-4">
-            <div class="col-md-6" id="cloud">
-                <div class="card card-minimal h-100 p-4">
-                    <div class="card-body">
-                        <h4 class="card-title fw-bold">Cloud Migration</h4>
-                        <p class="card-text text-secondary mt-3">Transition your legacy systems to modern cloud infrastructure (AWS, Azure, Google Cloud). We handle the entire lifecycle—from readiness assessment to execution—ensuring zero data loss and minimal downtime.</p>
-                    </div>
+            <div class="row mt-5">
+
+                <div class="col-md-4">
+                    <h5>Cloud Migration</h5>
+                    <p>Seamlessly move your infrastructure to AWS or Azure.</p>
                 </div>
-            </div>
-            <div class="col-md-6" id="cyber">
-                <div class="card card-minimal h-100 p-4">
-                    <div class="card-body">
-                        <h4 class="card-title fw-bold">Cybersecurity</h4>
-                        <p class="card-text text-secondary mt-3">Robust defense mechanisms to protect your sensitive data. Our services include threat modeling, vulnerability scanning, employee security training, and incident response planning.</p>
-                    </div>
+
+                <div class="col-md-4">
+                    <h5>Cybersecurity</h5>
+                    <p>Risk assessment, monitoring, and protection.</p>
                 </div>
-            </div>
-            <div class="col-md-6" id="managed">
-                <div class="card card-minimal h-100 p-4">
-                    <div class="card-body">
-                        <h4 class="card-title fw-bold">Managed IT Support</h4>
-                        <p class="card-text text-secondary mt-3">Consider us your outsourced IT department. We provide 24/7 monitoring, patch management, helpdesk support, and routine maintenance so your team can focus on their actual work.</p>
-                    </div>
+
+                <div class="col-md-4">
+                    <h5>Managed IT Support</h5>
+                    <p>24/7 monitoring and maintenance.</p>
                 </div>
-            </div>
-            <div class="col-md-6" id="network">
-                <div class="card card-minimal h-100 p-4">
-                    <div class="card-body">
-                        <h4 class="card-title fw-bold">Network Architecture</h4>
-                        <p class="card-text text-secondary mt-3">Design and implementation of fast, reliable, and secure internal networks. Whether you are setting up a new physical office or optimizing remote VPN access, we build the foundation.</p>
-                    </div>
-                </div>
+
             </div>
         </div>
-    </main>
+    </section>
 
-    <footer class="bg-white border-top py-4 text-center"><div class="container"><p class="mb-0 text-secondary">&copy; 2026 Apex IT Solutions. All rights reserved.</p></div></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
